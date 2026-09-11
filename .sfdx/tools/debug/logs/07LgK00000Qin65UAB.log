@@ -1,0 +1,532 @@
+67.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+06:31:42.1 (1802038)|USER_INFO|[EXTERNAL]|005gK00004LjKI1|dasshankarjay97363107.1be822b813f1@agentforce.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+06:31:42.1 (1855720)|EXECUTION_STARTED
+06:31:42.1 (1883109)|CODE_UNIT_STARTED|[EXTERNAL]|01pgK00000FU8qj|AccountManagerTest.testGetAccount()
+06:31:42.1 (2170512)|HEAP_ALLOCATE|[95]|Bytes:3
+06:31:42.1 (2252727)|HEAP_ALLOCATE|[100]|Bytes:152
+06:31:42.1 (2267250)|HEAP_ALLOCATE|[417]|Bytes:408
+06:31:42.1 (2279450)|HEAP_ALLOCATE|[430]|Bytes:408
+06:31:42.1 (2302090)|HEAP_ALLOCATE|[317]|Bytes:6
+06:31:42.1 (2312557)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:60
+06:31:42.1 (2332675)|METHOD_ENTRY|[2]|01pgK00000FU8qj|AccountManagerTest.AccountManagerTest()
+06:31:42.1 (2343220)|STATEMENT_EXECUTE|[2]
+06:31:42.1 (2348395)|STATEMENT_EXECUTE|[2]
+06:31:42.1 (2368215)|HEAP_ALLOCATE|[68]|Bytes:5
+06:31:42.1 (2404551)|HEAP_ALLOCATE|[74]|Bytes:5
+06:31:42.1 (2410346)|HEAP_ALLOCATE|[82]|Bytes:7
+06:31:42.1 (3390070)|SYSTEM_MODE_ENTER|false
+06:31:42.1 (3410475)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+06:31:42.1 (3422107)|SYSTEM_MODE_EXIT|false
+06:31:42.1 (3433196)|METHOD_EXIT|[2]|AccountManagerTest
+06:31:42.1 (3524080)|SYSTEM_MODE_ENTER|false
+06:31:42.1 (3527159)|HEAP_ALLOCATE|[7]|Bytes:5
+06:31:42.1 (3529769)|STATEMENT_EXECUTE|[5]
+06:31:42.1 (3530909)|STATEMENT_EXECUTE|[7]
+06:31:42.1 (3579115)|HEAP_ALLOCATE|[7]|Bytes:4
+06:31:42.1 (3654988)|HEAP_ALLOCATE|[8]|Bytes:12
+06:31:42.1 (3781515)|VARIABLE_ASSIGNMENT|[7]|this.Name|"Test Account"|0xf09ac96
+06:31:42.1 (3802089)|VARIABLE_SCOPE_BEGIN|[7]|acc|Account|true|false
+06:31:42.1 (3835601)|VARIABLE_ASSIGNMENT|[7]|acc|{"Name":"Test Account"}|0xf09ac96
+06:31:42.1 (3838829)|STATEMENT_EXECUTE|[10]
+06:31:42.1 (3865265)|HEAP_ALLOCATE|[10]|Bytes:8
+06:31:42.1 (3888320)|DML_BEGIN|[10]|Op:Insert|Type:Account|Rows:1
+06:31:42.1 (3999780)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (22400908)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Account
+06:31:42.1 (22437285)|CODE_UNIT_FINISHED|Flow:Account
+06:31:42.1 (23761835)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005lwTt|AccountAddressTrigger on Account trigger event BeforeInsert|__sfdc_trigger/AccountAddressTrigger
+06:31:42.1 (23822030)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (23945845)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (23964662)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+06:31:42.1 (24025349)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x61fdc01d
+06:31:42.1 (24061207)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (24073342)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountAddressTrigger|true|false
+06:31:42.1 (24080776)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x61fdc01d
+06:31:42.1 (24086323)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (24351868)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (24374469)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.1 (24381735)|VARIABLE_SCOPE_BEGIN|[3]|acc|Account|true|false
+06:31:42.1 (25673625)|VARIABLE_ASSIGNMENT|[3]|acc|{"IsDeleted":false,"OwnerId":"005gK00004LjKI1QAN","Match_Billing_Address__c":false,"BillingCountryCode":"US","isAvaible__c":false,"Name":"Test Account","ShippingCountryCode":"US"}|0x68ef9a6b
+06:31:42.1 (25686254)|STATEMENT_EXECUTE|[3]
+06:31:42.1 (25713546)|STATEMENT_EXECUTE|[4]
+06:31:42.1 (25730816)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (25746621)|VARIABLE_ASSIGNMENT|[3]|acc|null|
+06:31:42.25 (25761394)|CUMULATIVE_LIMIT_USAGE
+06:31:42.25 (25761394)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.25 (25761394)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.1 (25942312)|CODE_UNIT_FINISHED|AccountAddressTrigger on Account trigger event BeforeInsert|__sfdc_trigger/AccountAddressTrigger
+06:31:42.1 (38147831)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:42.1 (38165963)|DUPLICATE_DETECTION_BEGIN
+06:31:42.1 (39364586)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRt|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+06:31:42.1 (90512781)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (90536691)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.1 (90754998)|DUPLICATE_DETECTION_END
+06:31:42.1 (90761469)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:42.1 (136602844)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005jVG5|AccountTrigger on Account trigger event AfterInsert|__sfdc_trigger/AccountTrigger
+06:31:42.1 (136680167)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (136956154)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (136979396)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+06:31:42.1 (137064237)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x49c4c5ce
+06:31:42.1 (137112620)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (137126602)|VARIABLE_SCOPE_BEGIN|[1]|this|AccountTrigger|true|false
+06:31:42.1 (137140246)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x49c4c5ce
+06:31:42.1 (137148023)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (137150185)|STATEMENT_EXECUTE|[3]
+06:31:42.1 (137165995)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.1 (137427704)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (137445992)|VARIABLE_ASSIGNMENT|[3]|this.contactToInsert|[]|0x49c4c5ce
+06:31:42.1 (137511998)|HEAP_ALLOCATE|[5]|Bytes:5
+06:31:42.1 (137531818)|VARIABLE_SCOPE_BEGIN|[5]|acc|Account|true|false
+06:31:42.1 (138564575)|VARIABLE_ASSIGNMENT|[5]|acc|{"LastModifiedDate":"2026-08-25T13:31:42.000Z","IsDeleted":false,"BillingCountryCode":"US","isAvaible__c":false,"SystemModstamp":"2026-08-25T13:31:42.000Z","Name":"Test Account","ShippingCountryCode":"US","CleanStatus":"Pending","BillingCountry":"United States","OwnerId":"005gK00004LjKI1QAN","CreatedById":"005gK00004LjKI1QAN","Match_Billing_Address__c":false,"CreatedDate":"2026-08-25T13:31:42.000Z","ShippingCountry":"United States","Id":"001gK00001Oac0PQAR","LastModifiedById":"005gK00004LjKI1QAN"}|0x1af25e9c
+06:31:42.1 (138584393)|STATEMENT_EXECUTE|[5]
+06:31:42.1 (138585991)|STATEMENT_EXECUTE|[7]
+06:31:42.1 (138615174)|HEAP_ALLOCATE|[7]|Bytes:4
+06:31:42.1 (138730239)|VARIABLE_SCOPE_BEGIN|[7]|con|Contact|true|false
+06:31:42.1 (138743213)|VARIABLE_ASSIGNMENT|[7]|con|{}|0x5e829802
+06:31:42.1 (138746179)|STATEMENT_EXECUTE|[9]
+06:31:42.1 (138752015)|HEAP_ALLOCATE|[9]|Bytes:7
+06:31:42.1 (138840641)|VARIABLE_ASSIGNMENT|[9]|this.FirstName|"default"|0x5e829802
+06:31:42.1 (138843740)|STATEMENT_EXECUTE|[10]
+06:31:42.1 (138865501)|HEAP_ALLOCATE|[10]|Bytes:7
+06:31:42.1 (138879951)|HEAP_ALLOCATE|[10]|Bytes:19
+06:31:42.1 (138895667)|VARIABLE_ASSIGNMENT|[10]|this.LastName|"Test Accountcontact"|0x5e829802
+06:31:42.1 (138897996)|STATEMENT_EXECUTE|[11]
+06:31:42.1 (138937089)|VARIABLE_ASSIGNMENT|[11]|this.AccountId|"001gK00001Oac0PQAR"|0x5e829802
+06:31:42.1 (138939601)|STATEMENT_EXECUTE|[13]
+06:31:42.1 (138999327)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (139017058)|HEAP_ALLOCATE|[5]|Bytes:5
+06:31:42.1 (139027455)|VARIABLE_ASSIGNMENT|[5]|acc|null|
+06:31:42.1 (139044149)|STATEMENT_EXECUTE|[16]
+06:31:42.1 (139044969)|STATEMENT_EXECUTE|[17]
+06:31:42.1 (139119340)|DML_BEGIN|[17]|Op:Insert|Type:Contact|Rows:1
+06:31:42.1 (139179208)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (147771205)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (147798807)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (148719207)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005m0Sf|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.1 (148771027)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.1 (148887698)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (148914512)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.1 (148965725)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1db78a19
+06:31:42.1 (149006760)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (149018627)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.1 (149029979)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1db78a19
+06:31:42.1 (149037518)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (149258429)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (149278134)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.1 (149286553)|VARIABLE_SCOPE_BEGIN|[3]|c|Contact|true|false
+06:31:42.1 (152824908)|VARIABLE_ASSIGNMENT|[3]|c|{"IsDeleted":false,"AccountId":"001gK00001Oac0PQAR","IsEmailBounced":false,"DoNotCall":false,"OtherCountryCode":"US","FirstName":"default","HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"Content_Fullname__c":"default Test Account (7 more) ...","Missing_Data__c":false,"OwnerId":"005gK00004LjKI1QAN","Full_Name__c":"default Test Account (7 more) ...","MailingCountryCode":"US","LastName":"Test Accountcontact","IsPriorityRecord":false,"Active__c":false}|0x2177ce89
+06:31:42.1 (152845358)|STATEMENT_EXECUTE|[3]
+06:31:42.1 (152879716)|HEAP_ALLOCATE|[4]|Bytes:11
+06:31:42.1 (152924852)|STATEMENT_EXECUTE|[4]
+06:31:42.1 (152950611)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (152970628)|VARIABLE_ASSIGNMENT|[3]|c|null|
+06:31:42.152 (152981584)|CUMULATIVE_LIMIT_USAGE
+06:31:42.152 (152981584)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.152 (152981584)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.1 (153193884)|CODE_UNIT_FINISHED|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.1 (159992234)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:42.1 (160013039)|DUPLICATE_DETECTION_BEGIN
+06:31:42.1 (160091514)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRu|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+06:31:42.1 (217486710)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (217509989)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.1 (217516223)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (217519070)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.1 (217689845)|DUPLICATE_DETECTION_END
+06:31:42.1 (217696200)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:42.1 (257540140)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (257564151)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (257614584)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (257624797)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (265530278)|DML_END|[17]
+06:31:42.1 (266183720)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.266 (266219464)|CUMULATIVE_LIMIT_USAGE
+06:31:42.266 (266219464)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.266 (266219464)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.1 (266399443)|CODE_UNIT_FINISHED|AccountTrigger on Account trigger event AfterInsert|__sfdc_trigger/AccountTrigger
+06:31:42.1 (267996529)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Account
+06:31:42.280 (280498144)|FLOW_CREATE_INTERVIEW_BEGIN|00DgK00000Q0VhZ|300gK000012w6BT|301gK00001CCf81
+06:31:42.280 (280761550)|FLOW_CREATE_INTERVIEW_END|40022f1efbb59c5dda34401f9b41a03738d203-2840|Account Email Notification Flow
+06:31:42.282 (282146542)|FLOW_START_INTERVIEWS_BEGIN|1
+06:31:42.282 (282263029)|FLOW_START_INTERVIEW_BEGIN|40022f1efbb59c5dda34401f9b41a03738d203-2840|Account Email Notification Flow
+06:31:42.282 (282864082)|FLOW_START_INTERVIEW_END|40022f1efbb59c5dda34401f9b41a03738d203-2840|Account Email Notification Flow
+06:31:42.282 (330918240)|WF_EMAIL_SENT|Reference:emailSimple|Recipients:dasshankarjay97363107@gmail.com |CcEmails:
+06:31:42.282 (333007925)|FLOW_START_INTERVIEWS_END|1
+06:31:42.282 (337571719)|FLOW_INTERVIEW_FINISHED|40022f1efbb59c5dda34401f9b41a03738d203-2840|Account Email Notification Flow
+06:31:42.342 (342318325)|FLOW_CREATE_INTERVIEW_BEGIN|00DgK00000Q0VhZ|300gK000012wYnd|301gK00001CCLSg
+06:31:42.342 (342410874)|FLOW_CREATE_INTERVIEW_END|40032f1efbb59c5dda34401f9b41a03738d203-2841|Account Email Notification
+06:31:42.343 (343476190)|FLOW_START_INTERVIEWS_BEGIN|1
+06:31:42.343 (343539422)|FLOW_START_INTERVIEW_BEGIN|40032f1efbb59c5dda34401f9b41a03738d203-2841|Account Email Notification
+06:31:42.343 (343744223)|FLOW_START_INTERVIEW_END|40032f1efbb59c5dda34401f9b41a03738d203-2841|Account Email Notification
+06:31:42.343 (368856652)|WF_EMAIL_SENT|Reference:emailSimple|Recipients:dasshankarjay97363107@gmail.com |CcEmails:
+06:31:42.343 (369692063)|FLOW_START_INTERVIEWS_END|1
+06:31:42.343 (370839158)|FLOW_INTERVIEW_FINISHED|40032f1efbb59c5dda34401f9b41a03738d203-2841|Account Email Notification
+06:31:42.375 (375613331)|FLOW_CREATE_INTERVIEW_BEGIN|00DgK00000Q0VhZ|300gK000012wblX|301gK00001CCnNJ
+06:31:42.375 (375700620)|FLOW_CREATE_INTERVIEW_END|40042f1efbb59c5dda34401f9b41a03738d203-2842|Account Contact Opportunity Flow
+06:31:42.376 (376662922)|FLOW_START_INTERVIEWS_BEGIN|1
+06:31:42.376 (376716916)|FLOW_START_INTERVIEW_BEGIN|40042f1efbb59c5dda34401f9b41a03738d203-2842|Account Contact Opportunity Flow
+06:31:42.376 (376922092)|FLOW_START_INTERVIEW_END|40042f1efbb59c5dda34401f9b41a03738d203-2842|Account Contact Opportunity Flow
+06:31:42.380 (380843102)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.380 (380865985)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.381 (381538439)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005m0Sf|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.381 (381591967)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.381 (381654165)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.381 (381663972)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.381 (381733965)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x59b7c384
+06:31:42.381 (381758182)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.381 (381765362)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.381 (381772805)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x59b7c384
+06:31:42.381 (381778062)|STATEMENT_EXECUTE|[1]
+06:31:42.381 (381851185)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.381 (381873817)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.381 (381882277)|VARIABLE_SCOPE_BEGIN|[3]|c|Contact|true|false
+06:31:42.381 (383153374)|VARIABLE_ASSIGNMENT|[3]|c|{"IsDeleted":false,"IsEmailBounced":false,"DoNotCall":false,"OtherCountryCode":"US","HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"Content_Fullname__c":" Test Account","Missing_Data__c":false,"OwnerId":"005gK00004LjKI1QAN","Full_Name__c":" Test Account","MailingCountryCode":"US","LastName":"Test Account","IsPriorityRecord":false,"Active__c":false}|0x5aeaa899
+06:31:42.381 (383170814)|STATEMENT_EXECUTE|[3]
+06:31:42.381 (383213680)|STATEMENT_EXECUTE|[4]
+06:31:42.381 (383240064)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.381 (383259410)|VARIABLE_ASSIGNMENT|[3]|c|null|
+06:31:42.383 (383269093)|CUMULATIVE_LIMIT_USAGE
+06:31:42.383 (383269093)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 113 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.383 (383269093)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.381 (383468423)|CODE_UNIT_FINISHED|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.384 (384242797)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:42.384 (384257469)|DUPLICATE_DETECTION_BEGIN
+06:31:42.384 (384305378)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRu|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+06:31:42.384 (408533717)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.384 (408562823)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.384 (408571137)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.384 (408575637)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.384 (408752831)|DUPLICATE_DETECTION_END
+06:31:42.384 (408761443)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:42.435 (435277140)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.435 (435304291)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.435 (435347285)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.435 (435353996)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.450 (450129659)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+06:31:42.450 (450157689)|CODE_UNIT_FINISHED|Flow:Opportunity
+06:31:42.456 (456123953)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Opportunity:new
+06:31:42.456 (456151927)|VALIDATION_RULE|03dgK000000wiqH|Opportunity_Name_Lock
+06:31:42.456 (456352426)|VALIDATION_FORMULA|AND(
+OR(
+ISPICKVAL(StageName,"Closed Won"),
+ISPICKVAL(StageName,"Closed Lost")
+),
+ISCHANGED(Name)
+)|StageName=Prospecting , Name=Test Account
+06:31:42.456 (456358060)|VALIDATION_PASS
+06:31:42.456 (456365132)|CODE_UNIT_FINISHED|Validation:Opportunity:new
+06:31:42.506 (506556698)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005lwor|ClosedOpportunityTrigger on Opportunity trigger event AfterInsert|__sfdc_trigger/ClosedOpportunityTrigger
+06:31:42.506 (506623200)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.506 (506850120)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.506 (506867844)|VARIABLE_SCOPE_BEGIN|[1]|this|ClosedOpportunityTrigger|true|false
+06:31:42.506 (506959095)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3de53c18
+06:31:42.506 (506996131)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+06:31:42.506 (507007781)|VARIABLE_SCOPE_BEGIN|[1]|this|ClosedOpportunityTrigger|true|false
+06:31:42.506 (507016985)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3de53c18
+06:31:42.506 (507022591)|STATEMENT_EXECUTE|[1]
+06:31:42.506 (507024160)|STATEMENT_EXECUTE|[3]
+06:31:42.506 (507036363)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.506 (507129405)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.506 (507139023)|VARIABLE_ASSIGNMENT|[3]|this.tasksToCreate|[]|0x3de53c18
+06:31:42.506 (507300082)|HEAP_ALLOCATE|[5]|Bytes:5
+06:31:42.506 (507330002)|VARIABLE_SCOPE_BEGIN|[5]|opp|Opportunity|true|false
+06:31:42.506 (508733880)|VARIABLE_ASSIGNMENT|[5]|opp|{"Text__c":"Normal Priority","LastModifiedDate":"2026-08-25T13:31:42.000Z","IsDeleted":false,"AccountId":"001gK00001Oac0PQAR","HasOpportunityLineItem":false,"StageName":"Prospecting","Probability":10,"ForecastCategory":"Pipeline","IsClosed":false,"CloseDate":"2026-02-07T00:00:00.000Z","Name":"Test Account","SystemModstamp":"2026-08-25T13:31:42.000Z","HasOpenActivity":false,"Priority__c":"Test Account","CreatedById":"005gK00004LjKI1QAN","OwnerId":"005gK00004LjKI1QAN","IsWon":false,"CreatedDate":"2026-08-25T13:31:42.000Z","HasOverdueTask":false,"Id":"006gK00000NIRSjQAP","ForecastCategoryName":"Pipeline","IsPrivate":false,"LastModifiedById":"005gK00004LjKI1QAN"}|0x1b93e578
+06:31:42.506 (508749895)|STATEMENT_EXECUTE|[5]
+06:31:42.506 (508775300)|HEAP_ALLOCATE|[6]|Bytes:10
+06:31:42.506 (508802649)|STATEMENT_EXECUTE|[6]
+06:31:42.506 (508823595)|HEAP_ALLOCATE|[5]|Bytes:5
+06:31:42.506 (508837646)|VARIABLE_ASSIGNMENT|[5]|opp|null|
+06:31:42.506 (508875061)|STATEMENT_EXECUTE|[14]
+06:31:42.508 (508881022)|CUMULATIVE_LIMIT_USAGE
+06:31:42.508 (508881022)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 132 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.508 (508881022)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.506 (509079054)|CODE_UNIT_FINISHED|ClosedOpportunityTrigger on Opportunity trigger event AfterInsert|__sfdc_trigger/ClosedOpportunityTrigger
+06:31:42.509 (509925729)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+06:31:42.509 (510106393)|CODE_UNIT_FINISHED|Flow:Opportunity
+06:31:42.510 (510167114)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Opportunity
+06:31:42.510 (515261881)|CODE_UNIT_FINISHED|Flow:Opportunity
+06:31:42.376 (519755440)|FLOW_START_INTERVIEWS_END|1
+06:31:42.376 (520993076)|FLOW_INTERVIEW_FINISHED|40042f1efbb59c5dda34401f9b41a03738d203-2842|Account Contact Opportunity Flow
+06:31:42.1 (522571053)|CODE_UNIT_FINISHED|Flow:Account
+06:31:42.1 (523551881)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Account
+06:31:42.1 (523568735)|CODE_UNIT_FINISHED|Flow:Account
+06:31:42.1 (526818881)|DML_END|[10]
+06:31:42.1 (527438317)|STATEMENT_EXECUTE|[12]
+06:31:42.1 (527487855)|HEAP_ALLOCATE|[12]|Bytes:4
+06:31:42.1 (527514382)|HEAP_ALLOCATE|[13]|Bytes:4
+06:31:42.1 (527573989)|VARIABLE_ASSIGNMENT|[12]|this.FirstName|"John"|0x924fca6
+06:31:42.1 (527577725)|HEAP_ALLOCATE|[14]|Bytes:3
+06:31:42.1 (527588218)|VARIABLE_ASSIGNMENT|[12]|this.LastName|"Doe"|0x924fca6
+06:31:42.1 (527627969)|VARIABLE_ASSIGNMENT|[12]|this.AccountId|"001gK00001Oac0PQAR"|0x924fca6
+06:31:42.1 (527657101)|VARIABLE_SCOPE_BEGIN|[12]|con1|Contact|true|false
+06:31:42.1 (527684184)|VARIABLE_ASSIGNMENT|[12]|con1|{"FirstName":"John","LastName":"Doe","AccountId":"001gK00001Oac0PQAR"}|0x924fca6
+06:31:42.1 (527689873)|STATEMENT_EXECUTE|[18]
+06:31:42.1 (527696543)|HEAP_ALLOCATE|[18]|Bytes:4
+06:31:42.1 (527701907)|HEAP_ALLOCATE|[19]|Bytes:4
+06:31:42.1 (527714727)|VARIABLE_ASSIGNMENT|[18]|this.FirstName|"Jane"|0x72e56ee3
+06:31:42.1 (527728355)|VARIABLE_ASSIGNMENT|[18]|this.LastName|"Doe"|0x72e56ee3
+06:31:42.1 (527745050)|VARIABLE_ASSIGNMENT|[18]|this.AccountId|"001gK00001Oac0PQAR"|0x72e56ee3
+06:31:42.1 (527755116)|VARIABLE_SCOPE_BEGIN|[18]|con2|Contact|true|false
+06:31:42.1 (527766385)|VARIABLE_ASSIGNMENT|[18]|con2|{"FirstName":"Jane","LastName":"Doe","AccountId":"001gK00001Oac0PQAR"}|0x72e56ee3
+06:31:42.1 (527769608)|STATEMENT_EXECUTE|[24]
+06:31:42.1 (527782740)|HEAP_ALLOCATE|[24]|Bytes:4
+06:31:42.1 (527835961)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+06:31:42.1 (527906548)|DML_BEGIN|[24]|Op:Insert|Type:Contact|Rows:2
+06:31:42.1 (527944429)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+06:31:42.1 (531962996)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (531986821)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (533350800)|CODE_UNIT_STARTED|[EXTERNAL]|01qgK000005m0Sf|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.1 (533415291)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+06:31:42.1 (533484766)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (533495074)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.1 (533539368)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2b882677
+06:31:42.1 (533569484)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+06:31:42.1 (533579327)|VARIABLE_SCOPE_BEGIN|[1]|this|RestrictContactByName|true|false
+06:31:42.1 (533590179)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2b882677
+06:31:42.1 (533597517)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (533683777)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (533704624)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.1 (533715215)|VARIABLE_SCOPE_BEGIN|[3]|c|Contact|true|false
+06:31:42.1 (534738497)|VARIABLE_ASSIGNMENT|[3]|c|{"IsDeleted":false,"AccountId":"001gK00001Oac0PQAR","IsEmailBounced":false,"DoNotCall":false,"OtherCountryCode":"US","FirstName":"John","HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"Content_Fullname__c":"John Doe","Missing_Data__c":false,"OwnerId":"005gK00004LjKI1QAN","Full_Name__c":"John Doe","MailingCountryCode":"US","LastName":"Doe","IsPriorityRecord":false,"Active__c":false}|0xc9d230a
+06:31:42.1 (534751335)|STATEMENT_EXECUTE|[3]
+06:31:42.1 (534787360)|STATEMENT_EXECUTE|[4]
+06:31:42.1 (534811620)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (534827167)|HEAP_ALLOCATE|[3]|Bytes:4
+06:31:42.1 (534833883)|VARIABLE_SCOPE_BEGIN|[3]|c|Contact|true|false
+06:31:42.1 (535503706)|VARIABLE_ASSIGNMENT|[3]|c|{"IsDeleted":false,"AccountId":"001gK00001Oac0PQAR","IsEmailBounced":false,"DoNotCall":false,"OtherCountryCode":"US","FirstName":"Jane","HasOptedOutOfEmail":false,"HasOptedOutOfFax":false,"Content_Fullname__c":"Jane Doe","Missing_Data__c":false,"OwnerId":"005gK00004LjKI1QAN","Full_Name__c":"Jane Doe","MailingCountryCode":"US","LastName":"Doe","IsPriorityRecord":false,"Active__c":false}|0x1eeb4324
+06:31:42.1 (535512516)|STATEMENT_EXECUTE|[3]
+06:31:42.1 (535528744)|STATEMENT_EXECUTE|[4]
+06:31:42.1 (535540584)|HEAP_ALLOCATE|[3]|Bytes:5
+06:31:42.1 (535553210)|VARIABLE_ASSIGNMENT|[3]|c|null|
+06:31:42.535 (535562335)|CUMULATIVE_LIMIT_USAGE
+06:31:42.535 (535562335)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 142 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.535 (535562335)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.1 (535750466)|CODE_UNIT_FINISHED|RestrictContactByName on Contact trigger event BeforeInsert|__sfdc_trigger/RestrictContactByName
+06:31:42.1 (538741278)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:42.1 (538753713)|DUPLICATE_DETECTION_BEGIN
+06:31:42.1 (538793414)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRu|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+06:31:42.1 (593738842)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (593749968)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (593763781)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:2|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.1 (593769347)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (593772173)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Contact|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+06:31:42.1 (593774801)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Contact|NumRecordsToBeSaved:2|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+06:31:42.1 (594045194)|DUPLICATE_DETECTION_END
+06:31:42.1 (594058150)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:42.1 (641131401)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (641154949)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (641195874)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Contact
+06:31:42.1 (641201631)|CODE_UNIT_FINISHED|Flow:Contact
+06:31:42.1 (643234987)|DML_END|[24]
+06:31:42.1 (643754292)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+06:31:42.1 (643779371)|STATEMENT_EXECUTE|[26]
+06:31:42.1 (643848997)|HEAP_ALLOCATE|[26]|Bytes:252
+06:31:42.1 (643857186)|HEAP_ALLOCATE|[26]|Bytes:25
+06:31:42.1 (643872088)|SYSTEM_METHOD_ENTRY|[1]|RestRequest.RestRequest()
+06:31:42.1 (643874317)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (643883058)|SYSTEM_METHOD_EXIT|[1]|RestRequest
+06:31:42.1 (643892881)|HEAP_ALLOCATE|[26]|Bytes:32
+06:31:42.1 (644077317)|VARIABLE_SCOPE_BEGIN|[26]|request|System.RestRequest|true|false
+06:31:42.1 (644129602)|VARIABLE_ASSIGNMENT|[26]|request|{"headers":"0x20a35ad7","params":"0x59794428"}|0x68f5abad
+06:31:42.1 (644133635)|STATEMENT_EXECUTE|[27]
+06:31:42.1 (644136365)|HEAP_ALLOCATE|[28]|Bytes:28
+06:31:42.1 (644219318)|HEAP_ALLOCATE|[28]|Bytes:18
+06:31:42.1 (644228253)|HEAP_ALLOCATE|[28]|Bytes:9
+06:31:42.1 (644237235)|HEAP_ALLOCATE|[28]|Bytes:55
+06:31:42.1 (644259746)|STATEMENT_EXECUTE|[29]
+06:31:42.1 (644261675)|HEAP_ALLOCATE|[29]|Bytes:3
+06:31:42.1 (644281545)|STATEMENT_EXECUTE|[31]
+06:31:42.1 (644322890)|VARIABLE_SCOPE_BEGIN|[3]|System.RestContext.request|System.RestRequest|true|true
+06:31:42.1 (644329991)|VARIABLE_SCOPE_BEGIN|[4]|System.RestContext.response|System.RestResponse|true|true
+06:31:42.1 (644340785)|HEAP_ALLOCATE|[31]|Bytes:112
+06:31:42.1 (644344865)|HEAP_ALLOCATE|[31]|Bytes:5
+06:31:42.1 (644366132)|SYSTEM_METHOD_ENTRY|[1]|RestContext.RestContext()
+06:31:42.1 (644368492)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (644372688)|SYSTEM_METHOD_EXIT|[1]|RestContext
+06:31:42.1 (644409112)|STATEMENT_EXECUTE|[33]
+06:31:42.1 (644427697)|HEAP_ALLOCATE|[33]|Bytes:118
+06:31:42.1 (644432617)|SYSTEM_METHOD_ENTRY|[1]|Test.Test()
+06:31:42.1 (644434681)|STATEMENT_EXECUTE|[1]
+06:31:42.1 (644437570)|SYSTEM_METHOD_EXIT|[1]|Test
+06:31:42.1 (644445566)|METHOD_ENTRY|[33]||System.Test.startTest()
+06:31:42.1 (646544278)|METHOD_EXIT|[33]||System.Test.startTest()
+06:31:42.1 (646556741)|STATEMENT_EXECUTE|[34]
+06:31:42.1 (649641309)|HEAP_ALLOCATE|[34]|Bytes:1
+06:31:42.1 (649676246)|METHOD_ENTRY|[2]|01pgK00000FU8nV|AccountManager.AccountManager()
+06:31:42.1 (649681926)|STATEMENT_EXECUTE|[2]
+06:31:42.1 (649686533)|STATEMENT_EXECUTE|[2]
+06:31:42.1 (649702231)|HEAP_ALLOCATE|[34]|Bytes:5
+06:31:42.1 (649713533)|METHOD_EXIT|[2]|AccountManager
+06:31:42.1 (649743217)|METHOD_ENTRY|[34]|01pgK00000FU8nV|AccountManager.getAccount()
+06:31:42.1 (649798459)|HEAP_ALLOCATE|[7]|Bytes:5
+06:31:42.1 (649802894)|STATEMENT_EXECUTE|[5]
+06:31:42.1 (649803915)|STATEMENT_EXECUTE|[7]
+06:31:42.1 (649840181)|VARIABLE_SCOPE_BEGIN|[7]|request|System.RestRequest|true|false
+06:31:42.1 (649910080)|VARIABLE_ASSIGNMENT|[7]|request|{"headers":"0x20a35ad7","httpMethod":"GET","params":"0x59794428","requestURI":"/services/apexrest/A (35 more) ..."}|0x68f5abad
+06:31:42.1 (649916305)|STATEMENT_EXECUTE|[9]
+06:31:42.1 (649942930)|HEAP_ALLOCATE|[10]|Bytes:10
+06:31:42.1 (650001981)|HEAP_ALLOCATE|[9]|Bytes:18
+06:31:42.1 (650013398)|VARIABLE_SCOPE_BEGIN|[9]|accountId|String|false|false
+06:31:42.1 (650023215)|VARIABLE_ASSIGNMENT|[9]|accountId|"001gK00001Oac0PQAR"
+06:31:42.1 (650027029)|STATEMENT_EXECUTE|[14]
+06:31:42.1 (650028796)|HEAP_ALLOCATE|[14]|Bytes:89
+06:31:42.1 (650049544)|HEAP_ALLOCATE|[14]|Bytes:4
+06:31:42.1 (650059728)|HEAP_ALLOCATE|[14]|Bytes:7
+06:31:42.1 (650855676)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:1|SELECT Id, Name, (SELECT Id, Name FROM Contacts) FROM Account WHERE Id = :tmpVar1 LIMIT 1
+06:31:42.1 (672101407)|SOQL_EXECUTE_END|[14]|Rows:1
+06:31:42.1 (672138591)|HEAP_ALLOCATE|[14]|Bytes:8
+06:31:42.1 (672157329)|HEAP_ALLOCATE|[14]|Bytes:308
+06:31:42.1 (672215252)|HEAP_ALLOCATE|[14]|Bytes:8
+06:31:42.1 (672236328)|HEAP_ALLOCATE|[14]|Bytes:33
+06:31:42.1 (672264227)|HEAP_ALLOCATE|[14]|Bytes:16
+06:31:42.1 (672273682)|VARIABLE_SCOPE_BEGIN|[14]|account|Account|true|false
+06:31:42.1 (672590203)|VARIABLE_ASSIGNMENT|[14]|account|{"Contacts":[{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD85QAG","Name":"default Test Account (7 more) ..."},{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD87QAG","Name":"John Doe"},{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD88QAG","Name":"Jane Doe"}],"Id":"001gK00001Oac0PQAR","Name":"Test Account"}|0x18acc02e
+06:31:42.1 (672597791)|STATEMENT_EXECUTE|[22]
+06:31:42.1 (672614363)|METHOD_EXIT|[34]|01pgK00000FU8nV|AccountManager.getAccount()
+06:31:42.1 (672620527)|VARIABLE_SCOPE_BEGIN|[34]|result|Account|true|false
+06:31:42.1 (672669560)|VARIABLE_ASSIGNMENT|[34]|result|{"Contacts":[{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD85QAG","Name":"default Test Account (7 more) ..."},{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD87QAG","Name":"John Doe"},{"AccountId":"001gK00001Oac0PQAR","Id":"003gK000011KD88QAG","Name":"Jane Doe"}],"Id":"001gK00001Oac0PQAR","Name":"Test Account"}|0x18acc02e
+06:31:42.1 (672674360)|STATEMENT_EXECUTE|[35]
+06:31:42.1 (672688358)|METHOD_ENTRY|[35]||System.Test.stopTest()
+06:31:42.1 (672896603)|METHOD_EXIT|[35]||System.Test.stopTest()
+06:31:42.1 (672899609)|STATEMENT_EXECUTE|[37]
+06:31:42.1 (672979549)|SYSTEM_MODE_EXIT|false
+06:31:42.672 (672996077)|CUMULATIVE_LIMIT_USAGE
+06:31:42.672 (672996077)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 6 out of 10000
+  Maximum CPU time: 142 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.672 (672996077)|TESTING_LIMITS
+06:31:42.672 (672996077)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+06:31:42.672 (672996077)|CUMULATIVE_LIMIT_USAGE_END
+
+06:31:42.1 (673041482)|CODE_UNIT_FINISHED|AccountManagerTest.testGetAccount()
+06:31:42.1 (673051283)|EXECUTION_FINISHED
+06:31:43.524 (1524071268)|USER_INFO|[EXTERNAL]|005gK00004LjKI1|dasshankarjay97363107.1be822b813f1@agentforce.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+06:31:43.524 (1524125009)|EXECUTION_STARTED
+06:31:43.524 (1524153181)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:43.524 (1524172974)|DUPLICATE_DETECTION_BEGIN
+06:31:43.524 (1524248340)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRt|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+06:31:43.524 (1544263376)|DUPLICATE_DETECTION_END
+06:31:43.524 (1544303114)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:43.524 (1544321056)|EXECUTION_FINISHED
+06:31:43.545 (1545694443)|USER_INFO|[EXTERNAL]|005gK00004LjKI1|dasshankarjay97363107.1be822b813f1@agentforce.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+06:31:43.545 (1545713552)|EXECUTION_STARTED
+06:31:43.545 (1545721706)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+06:31:43.545 (1545731042)|DUPLICATE_DETECTION_BEGIN
+06:31:43.545 (1545791996)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0BmgK0000076XRu|DuplicateRuleName:Standard Contact Duplicate Rule|DmlType:INSERT
+06:31:43.545 (1565548423)|DUPLICATE_DETECTION_END
+06:31:43.545 (1565564966)|CODE_UNIT_FINISHED|DuplicateDetector
+06:31:43.545 (1565577591)|EXECUTION_FINISHED
