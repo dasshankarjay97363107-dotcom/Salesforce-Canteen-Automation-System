@@ -1,21 +1,43 @@
 <template>
-    <lightning-card title="Contact List">
 
-        <template lwc:if={errors}>
-            <div class="slds-m-around_medium">
-                <template for:each={errors} for:item="error">
-                    <p key={error}>{error}</p>
+    <lightning-card
+        title="Contact List"
+        icon-name="standard:contact">
+
+        <div class="slds-p-around_medium">
+
+            <template lwc:if={selectedAccountId}>
+
+                <template lwc:if={contacts.length}>
+
+                    <lightning-datatable
+                        key-field="Id"
+                        data={contacts}
+                        columns={columns}>
+                    </lightning-datatable>
+
                 </template>
-            </div>
-        </template>
 
-        <template lwc:if={contacts}>
-            <lightning-datatable
-                key-field="Id"
-                data={contacts}
-                columns={columns}>
-            </lightning-datatable>
-        </template>
+                <template lwc:else>
+
+                    <p>
+                        No Contacts found for selected Account.
+                    </p>
+
+                </template>
+
+            </template>
+
+            <template lwc:else>
+
+                <p>
+                    Please select an Account.
+                </p>
+
+            </template>
+
+        </div>
 
     </lightning-card>
+
 </template>

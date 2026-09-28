@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="YouTube Child">
+
+        <div class="slds-p-around_medium">
+
+            <p>Channel: {channelName}</p>
+            <p>Subscribers: {subscribers}</p>
+
+            <lightning-button
+                label="Subscribe"
+                variant="brand"
+                onclick={handleSubscribe}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,57 @@
+<template>
+    <lightning-card title="Restaurant Menu" icon-name="utility:food_and_drink">
+
+        <div class="slds-p-around_medium">
+
+            <template if:true={menuItems}>
+                <div class="slds-grid slds-wrap">
+
+                    <template for:each={menuItems} for:item="item">
+
+                        <div
+                            key={item.Id}
+                            class="slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3 slds-p-around_small">
+
+                            <article class="slds-card slds-card_boundary">
+
+                                <div class="slds-p-around_medium">
+
+                                    <h2 class="slds-text-heading_medium">
+                                        {item.Name}
+                                    </h2>
+
+                                    <p class="slds-m-top_small">
+                                        Price: ₹{item.Price__c}
+                                    </p>
+
+                                    <p>
+                                        Category: {item.Category__c}
+                                    </p>
+
+                                    <lightning-button
+                                        class="slds-m-top_medium"
+                                        label="Add to Cart"
+                                        variant="brand"
+                                        data-id={item.Id}
+                                        onclick={handleAddToCart}>
+                                    </lightning-button>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </template>
+
+                </div>
+            </template>
+
+            <template if:false={menuItems}>
+                <p>No menu items available.</p>
+            </template>
+
+        </div>
+
+    </lightning-card>
+</template>

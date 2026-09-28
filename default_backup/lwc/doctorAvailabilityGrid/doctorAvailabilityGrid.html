@@ -1,0 +1,61 @@
+<template>
+    <lightning-card
+        title="Doctor Availability Grid"
+        icon-name="standard:service_appointment">
+
+        <div class="slds-p-around_medium">
+
+            <!-- Search Doctor -->
+            <lightning-input
+                type="search"
+                label="Search Doctor"
+                placeholder="Enter doctor name..."
+                value={searchDoctor}
+                onchange={handleDoctorSearch}>
+            </lightning-input>
+
+            <br />
+
+            <!-- Filter by Specialty -->
+            <lightning-input
+                type="search"
+                label="Filter by Specialty"
+                placeholder="Enter specialty..."
+                value={specialty}
+                onchange={handleSpecialtyChange}>
+            </lightning-input>
+
+            <br />
+
+            <!-- Search Button -->
+            <lightning-button
+                variant="brand"
+                label="Search Availability"
+                onclick={handleSearch}>
+            </lightning-button>
+
+        </div>
+
+        <!-- Availability Table -->
+        <template if:true={availabilityData}>
+            <div class="slds-p-around_medium">
+
+                <lightning-datatable
+                    key-field="id"
+                    data={availabilityData}
+                    columns={columns}
+                    hide-checkbox-column>
+                </lightning-datatable>
+
+            </div>
+        </template>
+
+        <!-- No Data Message -->
+        <template if:true={showNoData}>
+            <div class="slds-p-around_medium slds-text-align_center">
+                No doctor availability found.
+            </div>
+        </template>
+
+    </lightning-card>
+</template>

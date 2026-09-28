@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Rewards Catalog" icon-name="standard:reward">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-combobox
+                label="Select Reward"
+                value={selectedReward}
+                options={rewardOptions}
+                onchange={handleRewardChange}>
+            </lightning-combobox>
+
+            <template if:true={selectedReward}>
+
+                <div class="slds-m-top_medium">
+
+                    <p>
+                        <strong>Points Required:</strong>
+                        {pointsRequired}
+                    </p>
+
+                    <div class="slds-m-top_medium">
+
+                        <lightning-button
+                            variant="brand"
+                            label="Redeem Reward"
+                            onclick={handleRedeem}>
+                        </lightning-button>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+            <div class="slds-m-top_medium">
+                <lightning-flow></lightning-flow>
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>

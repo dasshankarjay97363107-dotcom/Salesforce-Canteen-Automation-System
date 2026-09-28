@@ -1,0 +1,45 @@
+<template>
+
+    <lightning-card
+        title="Account Message Lifecycle"
+        icon-name="standard:account">
+
+        <div class="slds-p-around_medium">
+
+            <p>
+                <strong>Message Channel Status:</strong>
+            </p>
+
+            <p class="slds-m-top_x-small">
+                {messageStatus}
+            </p>
+
+            <template lwc:if={selectedAccountId}>
+
+                <div class="slds-m-top_medium">
+
+                    <p>
+                        <strong>Selected Account Id:</strong>
+                    </p>
+
+                    <p class="slds-m-top_x-small">
+                        {selectedAccountId}
+                    </p>
+
+                </div>
+
+            </template>
+
+            <template lwc:else>
+
+                <p class="slds-m-top_medium">
+                    No Account selected yet.
+                </p>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Bears">
+        <div class="slds-var-p-around_medium">
+
+            <template for:each={bears} for:item="bear">
+                <c-bear-tile
+                    key={bear.Id}
+                    bear={bear}
+                    onbearview={handleBearView}>
+                </c-bear-tile>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

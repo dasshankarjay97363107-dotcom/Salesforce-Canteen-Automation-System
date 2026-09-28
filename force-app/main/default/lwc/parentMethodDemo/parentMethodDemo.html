@@ -1,0 +1,19 @@
+<template>
+
+    <lightning-card title="Parent Component">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-button
+                label="Call Child Method"
+                variant="brand"
+                onclick={handleCallChild}>
+            </lightning-button>
+
+        </div>
+
+        <c-child-method-demo></c-child-method-demo>
+
+    </lightning-card>
+
+</template>

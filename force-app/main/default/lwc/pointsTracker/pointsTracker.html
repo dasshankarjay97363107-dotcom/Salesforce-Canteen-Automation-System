@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Points Tracker" icon-name="standard:reward">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-record-picker
+                label="Select Customer"
+                placeholder="Search Customer..."
+                object-api-name="Customer__c"
+                onchange={handleCustomerChange}
+                required>
+            </lightning-record-picker>
+
+            <div class="slds-m-top_large slds-text-align_center">
+
+                <p class="slds-text-heading_medium">
+                    Total Loyalty Points
+                </p>
+
+                <p class="slds-text-heading_large slds-m-top_small">
+                    {totalPoints}
+                </p>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>

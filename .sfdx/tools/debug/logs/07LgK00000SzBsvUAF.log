@@ -1,0 +1,43 @@
+67.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DATA_ACCESS,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: System.debug(
+Execute Anonymous:     Schema.SObjectType.Account.fields.getMap().containsKey('Status__c')
+Execute Anonymous: );
+00:24:48.6 (6503329)|USER_INFO|[EXTERNAL]|005gK00004LjKI1|dasshankarjay97363107.1be822b813f1@agentforce.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+00:24:48.6 (6529199)|EXECUTION_STARTED
+00:24:48.6 (6549868)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+00:24:48.6 (6869580)|HEAP_ALLOCATE|[95]|Bytes:3
+00:24:48.6 (6918084)|HEAP_ALLOCATE|[100]|Bytes:152
+00:24:48.6 (6931821)|HEAP_ALLOCATE|[417]|Bytes:408
+00:24:48.6 (6943842)|HEAP_ALLOCATE|[430]|Bytes:408
+00:24:48.6 (6962477)|HEAP_ALLOCATE|[317]|Bytes:6
+00:24:48.6 (6983720)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+00:24:48.6 (7161171)|STATEMENT_EXECUTE|[1]
+00:24:48.6 (7162495)|STATEMENT_EXECUTE|[1]
+00:24:48.6 (7165210)|HEAP_ALLOCATE|[2]|Bytes:7
+00:24:48.6 (7182415)|HEAP_ALLOCATE|[68]|Bytes:5
+00:24:48.6 (7211575)|HEAP_ALLOCATE|[74]|Bytes:5
+00:24:48.6 (7216458)|HEAP_ALLOCATE|[82]|Bytes:7
+00:24:48.6 (10358952)|HEAP_ALLOCATE|[2]|Bytes:4
+00:24:48.6 (19203820)|HEAP_ALLOCATE|[2]|Bytes:296
+00:24:48.6 (19237472)|HEAP_ALLOCATE|[2]|Bytes:9
+00:24:48.6 (19380874)|USER_DEBUG|[1]|DEBUG|false
+00:24:48.19 (19500930)|CUMULATIVE_LIMIT_USAGE
+00:24:48.19 (19500930)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+00:24:48.19 (19500930)|CUMULATIVE_LIMIT_USAGE_END
+
+00:24:48.6 (19556045)|CODE_UNIT_FINISHED|execute_anonymous_apex
+00:24:48.6 (19570445)|EXECUTION_FINISHED

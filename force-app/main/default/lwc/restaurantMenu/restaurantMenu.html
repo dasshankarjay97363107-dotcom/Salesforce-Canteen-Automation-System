@@ -1,0 +1,23 @@
+<template>
+
+    <lightning-card title="Restaurant Menu">
+
+        <div class="slds-p-around_medium">
+
+            <c-menu-item-list
+                onaddtocart={handleAddToCart}>
+            </c-menu-item-list>
+
+            <div class="slds-m-top_large">
+
+                <c-restaurant-cart
+                    cart-items={cartItems}>
+                </c-restaurant-cart>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

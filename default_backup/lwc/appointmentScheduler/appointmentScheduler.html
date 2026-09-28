@@ -1,0 +1,68 @@
+<template>
+    <lightning-card title="Appointment Scheduler" icon-name="standard:event">
+
+        <div class="slds-p-around_medium">
+
+            <!-- Patient -->
+            <lightning-record-picker
+                label="Select Patient"
+                placeholder="Search Patient..."
+                object-api-name="Patient__c"
+                value={patientId}
+                onchange={handlePatientChange}>
+            </lightning-record-picker>
+
+            <br />
+
+            <!-- Doctor -->
+            <lightning-record-picker
+                label="Select Doctor"
+                placeholder="Search Doctor..."
+                object-api-name="Doctor__c"
+                value={doctorId}
+                onchange={handleDoctorChange}>
+            </lightning-record-picker>
+
+            <br />
+
+            <!-- Appointment Date -->
+            <lightning-input
+                type="date"
+                label="Appointment Date"
+                value={appointmentDate}
+                onchange={handleDateChange}>
+            </lightning-input>
+
+            <br />
+
+            <!-- Start Time -->
+            <lightning-input
+                type="time"
+                label="Start Time"
+                value={startTime}
+                onchange={handleStartTimeChange}>
+            </lightning-input>
+
+            <br />
+
+            <!-- End Time -->
+            <lightning-input
+                type="time"
+                label="End Time"
+                value={endTime}
+                onchange={handleEndTimeChange}>
+            </lightning-input>
+
+            <br />
+
+            <!-- Book Button -->
+            <lightning-button
+                variant="brand"
+                label="Book Appointment"
+                onclick={handleBookAppointment}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>

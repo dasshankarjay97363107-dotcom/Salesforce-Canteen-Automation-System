@@ -1,0 +1,64 @@
+<template>
+    <lightning-card title="My Cart" icon-name="utility:cart">
+
+        <div class="slds-p-around_medium">
+
+            <template if:true={cartItems}>
+                <template for:each={cartItems} for:item="item">
+
+                    <div key={item.id}
+                         class="slds-box slds-m-bottom_small">
+
+                        <h2 class="slds-text-heading_small">
+                            {item.name}
+                        </h2>
+
+                        <p>Price: ₹{item.price}</p>
+
+                        <div class="slds-grid slds-m-top_small">
+
+                            <lightning-button
+                                label="-"
+                                data-id={item.id}
+                                onclick={decreaseQuantity}>
+                            </lightning-button>
+
+                            <span class="slds-p-horizontal_medium">
+                                {item.quantity}
+                            </span>
+
+                            <lightning-button
+                                label="+"
+                                data-id={item.id}
+                                onclick={increaseQuantity}>
+                            </lightning-button>
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+                <div class="slds-m-top_medium">
+                    <h2 class="slds-text-heading_medium">
+                        Total: ₹{totalAmount}
+                    </h2>
+
+                    <lightning-button
+                        class="slds-m-top_medium"
+                        variant="brand"
+                        label="Place Order"
+                        onclick={placeOrder}>
+                    </lightning-button>
+                </div>
+
+            </template>
+
+            <template if:false={cartItems}>
+                <p>Your cart is empty.</p>
+            </template>
+
+        </div>
+
+    </lightning-card>
+</template>

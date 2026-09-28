@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Parent Component">
+
+        <div class="slds-p-around_medium">
+
+            <p>Selected Contact Name:</p>
+
+            <h2>{selectedContactName}</h2>
+
+        </div>
+
+        <c-contact-child
+            oncontactselect={handleContactSelect}>
+        </c-contact-child>
+
+    </lightning-card>
+</template>

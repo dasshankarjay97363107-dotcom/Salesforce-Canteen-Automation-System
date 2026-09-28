@@ -1,0 +1,64 @@
+<template>
+    <lightning-card title="Submit Feedback" icon-name="standard:feedback">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-record-picker
+                label="Select Customer"
+                placeholder="Search Customer..."
+                object-api-name="Customer__c"
+                value={customerId}
+                onchange={handleCustomerChange}>
+            </lightning-record-picker>
+
+            <lightning-input
+                class="slds-m-top_medium"
+                label="Product"
+                value={product}
+                onchange={handleProductChange}
+                required>
+            </lightning-input>
+
+            <lightning-input
+                class="slds-m-top_medium"
+                label="Store"
+                value={store}
+                onchange={handleStoreChange}>
+            </lightning-input>
+
+            <lightning-combobox
+                class="slds-m-top_medium"
+                label="Rating"
+                value={rating}
+                options={ratingOptions}
+                onchange={handleRatingChange}
+                required>
+            </lightning-combobox>
+
+            <lightning-combobox
+                class="slds-m-top_medium"
+                label="Feedback Type"
+                value={feedbackType}
+                options={feedbackTypeOptions}
+                onchange={handleFeedbackTypeChange}>
+            </lightning-combobox>
+
+            <lightning-textarea
+                class="slds-m-top_medium"
+                label="Comments"
+                value={comments}
+                onchange={handleCommentsChange}>
+            </lightning-textarea>
+
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    variant="brand"
+                    label="Submit Feedback"
+                    onclick={handleSubmit}>
+                </lightning-button>
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>

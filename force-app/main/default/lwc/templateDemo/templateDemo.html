@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Account List">
+
+        <div class="slds-p-around_medium">
+
+            <template for:each={accounts} for:item="account">
+
+                <p key={account.id}>
+                    {account.name}
+                </p>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+</template>
